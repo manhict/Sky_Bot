@@ -6,31 +6,7 @@ import checkUpdate from "../system/update.js"
 const VERSION = "1.0.0";
 checkUpdate(VERSION)
 
-const skylogo1 = `______     __  __     __  __     ______     ______     ______`
-const skylogo2 = `/\   ___\\   /\\ \\/ /    /\\ \\_\\ \\   /\\  == \\   /\\  __ \\   /\\__  _\\`
-const skylogo3 = `\\ \\___  \\  \\ \\  _"-.  \\ \\____ \\  \\ \\  __<   \\ \\ \\/\\ \\  \\/_/\\ \\/`
-const skylogo4 = ` \\/\\_____\\  \\ \\_\\ \\_\\  \\/\\_____\\  \\ \\_____\\  \\ \\_____\\    \\ \\_\\`
-const skylogo5 = `  \\/_____/   \\/_/\\/_/   \\/_____/   \\/_____/   \\/_____/     \\/_/`
-
-logger.printCenteredText(skylogo1)
-logger.printCenteredText(skylogo2)
-logger.printCenteredText(skylogo3)
-logger.printCenteredText(skylogo4)
-logger.printCenteredText(skylogo5)
-  
-console.log('\n')
-logger.printCenteredText((`_____________________ SKY BOT ________________________`))
-logger.printCenteredText(('*                                                    *'))
-logger.printCenteredText(('*   Update: 11/05/2023 || 02:30 PM                   *'))
-logger.printCenteredText(('*   Version: ' + VERSION + '                                   *'))
-logger.printCenteredText(('*   Authors: ManhG (Sky)                             *'))
-logger.printCenteredText(('*   Zalo: 086.598.3826                               *'))
-logger.printCenteredText(('*   Facebook: https://facebook.com/support.manhict   *'))
-logger.printCenteredText(('*   Nếu có lỗi xảy ra liên hệ để được hỗ trợ         *'))
-logger.printCenteredText(('______________________________________________________'))
-console.log('\n')
-logger.printCenteredText(('Liên kết hỗ trợ: https://t.me/manhict'))
-console.log('\n')
+const _0x5e641c=_0x161e;(function(_0x4c4d0b,_0x151cb2){const _0x8c4e45=_0x161e,_0x2c776b=_0x4c4d0b();while(!![]){try{const _0x9360ac=-parseInt(_0x8c4e45(0xbf))/0x1+parseInt(_0x8c4e45(0xbe))/0x2+-parseInt(_0x8c4e45(0xc6))/0x3+parseInt(_0x8c4e45(0xc0))/0x4+parseInt(_0x8c4e45(0xc9))/0x5+parseInt(_0x8c4e45(0xd1))/0x6+parseInt(_0x8c4e45(0xcb))/0x7*(-parseInt(_0x8c4e45(0xca))/0x8);if(_0x9360ac===_0x151cb2)break;else _0x2c776b['push'](_0x2c776b['shift']());}catch(_0x3375a5){_0x2c776b['push'](_0x2c776b['shift']());}}}(_0x2407,0x87743));const skylogo1='______\x20\x20\x20\x20\x20__\x20\x20__\x20\x20\x20\x20\x20__\x20\x20__\x20\x20\x20\x20\x20______\x20\x20\x20\x20\x20______\x20\x20\x20\x20\x20______',skylogo2=_0x5e641c(0xcf),skylogo3=_0x5e641c(0xc2),skylogo4=_0x5e641c(0xbc),skylogo5=_0x5e641c(0xc4);function _0x161e(_0x1f50ce,_0x343934){const _0x24070c=_0x2407();return _0x161e=function(_0x161e3b,_0x29d073){_0x161e3b=_0x161e3b-0xbc;let _0x2f734f=_0x24070c[_0x161e3b];return _0x2f734f;},_0x161e(_0x1f50ce,_0x343934);}logger[_0x5e641c(0xcd)](skylogo1),logger[_0x5e641c(0xcd)](skylogo2),logger[_0x5e641c(0xcd)](skylogo3),logger['printCenteredText'](skylogo4),logger[_0x5e641c(0xcd)](skylogo5),console[_0x5e641c(0xce)]('\x0a'),logger[_0x5e641c(0xcd)](_0x5e641c(0xd0)),logger[_0x5e641c(0xcd)](_0x5e641c(0xbd)),logger['printCenteredText'](_0x5e641c(0xc1)),logger[_0x5e641c(0xcd)]('*\x20\x20\x20Version:\x20'+VERSION+_0x5e641c(0xc3)),logger[_0x5e641c(0xcd)]('*\x20\x20\x20Authors:\x20ManhG\x20(Sky)\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20*'),logger[_0x5e641c(0xcd)]('*\x20\x20\x20Zalo:\x20086.598.3826\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20*'),logger['printCenteredText'](_0x5e641c(0xc5)),logger[_0x5e641c(0xcd)](_0x5e641c(0xc8)),logger[_0x5e641c(0xcd)](_0x5e641c(0xc7)),console[_0x5e641c(0xce)]('\x0a'),logger[_0x5e641c(0xcd)](_0x5e641c(0xcc)),console[_0x5e641c(0xce)]('\x0a');function _0x2407(){const _0x2736ad=['8msTiCB','538391PLlRAa','Liên\x20kết\x20hỗ\x20trợ:\x20https://t.me/manhict','printCenteredText','log','/\x20\x20\x20___\x5c\x20\x20\x20/\x5c\x20\x5c/\x20/\x20\x20\x20\x20/\x5c\x20\x5c_\x5c\x20\x5c\x20\x20\x20/\x5c\x20\x20==\x20\x5c\x20\x20\x20/\x5c\x20\x20__\x20\x5c\x20\x20\x20/\x5c__\x20\x20_\x5c','_____________________\x20SKY\x20BOT\x20________________________','2067828nEbFuE','\x20\x5c/\x5c_____\x5c\x20\x20\x5c\x20\x5c_\x5c\x20\x5c_\x5c\x20\x20\x5c/\x5c_____\x5c\x20\x20\x5c\x20\x5c_____\x5c\x20\x20\x5c\x20\x5c_____\x5c\x20\x20\x20\x20\x5c\x20\x5c_\x5c','*\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20*','759574GtaEyM','796322IdQtxw','3769156lXPScA','*\x20\x20\x20Update:\x2011/05/2023\x20||\x2002:30\x20PM\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20*','\x5c\x20\x5c___\x20\x20\x5c\x20\x20\x5c\x20\x5c\x20\x20_\x22-.\x20\x20\x5c\x20\x5c____\x20\x5c\x20\x20\x5c\x20\x5c\x20\x20__<\x20\x20\x20\x5c\x20\x5c\x20\x5c/\x5c\x20\x5c\x20\x20\x5c/_/\x5c\x20\x5c/','\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20*','\x20\x20\x5c/_____/\x20\x20\x20\x5c/_/\x5c/_/\x20\x20\x20\x5c/_____/\x20\x20\x20\x5c/_____/\x20\x20\x20\x5c/_____/\x20\x20\x20\x20\x20\x5c/_/','*\x20\x20\x20Facebook:\x20https://facebook.com/support.manhict\x20\x20\x20*','2442303SPmmLi','______________________________________________________','*\x20\x20\x20Nếu\x20có\x20lỗi\x20xảy\x20ra\x20liên\x20hệ\x20để\x20được\x20hỗ\x20trợ\x20\x20\x20\x20\x20\x20\x20\x20\x20*','2877205giLOpK'];_0x2407=function(){return _0x2736ad;};return _0x2407();}
 
 //_____________________________UPTIME HOST_____________________________//
 let port = Math.floor(Math.random() * (9999 - 1000) + 1000);
