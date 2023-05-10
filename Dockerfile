@@ -1,7 +1,7 @@
 FROM node:19
 
 # Create app directory
-WORKDIR /usr/src/SkyBot
+WORKDIR /usr/src/Sky_Bot
 
 # Install app dependencies
 # A wildcard is used to ensure both package.json AND package-lock.json are copied
