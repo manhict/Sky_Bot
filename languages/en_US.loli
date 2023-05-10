@@ -1,0 +1,85 @@
+# If you want to move down the line, please use \n. e.g: Sky\nSkyBot.
+# Put the # character at the beginning of each sentence if you don't want the code to run those lines.
+# After changed, you have to restart the bot to use.
+
+config: {
+  [NAME] = "en_US",
+  [TYPE] = "language system",
+  [AUTHOR] = "DuyVuong - ManhG",
+  [VERSION] = "1.0.0"
+}
+index: { 
+
+  # System
+  [CREATE_FBSTATE] = "Write Fbstate.json successful",
+  [HOST_UPTIME] = "Initialize server uptime, port: <1>",
+  [FBSTATE_NO] = "File <1>.json not found !!!",
+  [FBSTATE_ERR] = "Wrong file format Fbstate.",
+  [FBSTATE_YES] = "File <1>.json found\n-> Proceed to login.",
+  [LOGIN_EMAIL] = "Login with username, password...",
+  [LOGIN_ERROR] = "Failed, Please check username, password and 2FA code.",
+  [LOGIN_EMAIL_ERR] = "Failed, Please check username, password.",
+  [WRITE_FBSTATE] = "Write Fbstate successful\n-> Proceed to reboot",
+  [LOGIN_YES] = "Logged in successfully.\n",
+  [NEWFBSTATE_YES] = "Refreshed <1>.json.",
+  [INSTALL_PACKAGE] = "Installing required packages for module:\n <1>",
+  [INSTALL_PACKAGE_SUCCESS] = "Installed package <1> success",
+  [INSTALL_PACKAGE_FAILED] = "Installed package <1> failed with error: <2>",
+
+  # Auto Uptime
+  [CHECK_HOST] = "You are running bot at link: <1>",
+  [HACKER_PLAN] = "You are using Replit Hacker, remember to turn on 'Always On' to keep the BOT running.",
+  [HOST_FREE] = "You are using normal Replit, the system has automatically turned on the mode to always keep connected to the server.",
+  [HOST_FALSE] = "You are not using replit to run the bot. Please disable uptimeRobot in configMain\n",
+
+  # Settings database
+  [DATABASE_READ_YES] = "Read data of <1> group and <2> user.",
+  [INFO_DONE] = "Start receiving messages.",
+  [HANDLER_ERROR] = "An error: <1>",
+  [DATABASE_THREAD_NEW] = "New Group: <1> | <2>",
+  [DATABASE_USER_NEW] = "New User: <1> | <2>",
+
+  # Settings Hander Commands
+  [COMMAND_NO_SCRIPTS] = "Wrong order. Use <1><2> to see active commands.",
+  [COMMAND_NO_FIND] = "Kcommand: '<1>' not found on bot data!",
+  [COMMAND_NO_PERMISSIONS] = "You do not have permission to use the command '<1>', this command requires '<2>' to boot.",
+
+  # Setting Database
+  [CHOOSE_DATABASE] = "You choose the place to store the database as mongoose.",
+  [CHOOSE_DATABASE_LOCAL] = "You choose the place to store the database as local.",
+  [CONNECTION_DATABASE] = "Connecting to database mongodb",
+  [CONNECTION_DATABASE_SUCCESS] = "Mongodb database connection successful.",
+  [CONNECTION_DATABASE_FAILED] = "Mongodb database connection failed with error: <1>"",
+
+  # Role
+  [ROLE_0] = "Normal User",
+  [ROLE_1] = "Administrator",
+  [ROLE_2] = "Bot operator",
+  [ROLE_3] = "Bot supporter and operator",
+  [ROLE_4] = "Special Support",
+
+  # Modules Commands 
+  [HELP] = "===[ <1> ]===\n\n🔢 Version: <2>\n✊ Role: <3>\n📗 Author: <4>\n\n📜 Description: <5>\n ⏳ Timeout: <6>s\n📄 Usage: <7>\n\n🇻🇳 Facebook: https://fb.com/support.manhict",
+  [THROWERROR] = "Wrong command, use: <1>help <2> to see how to use",
+
+  # Load commands - events
+  [COMMAND_EVENT_LOAD_FILE] = "\nLoading success <1> <2>.",
+  [ENVCONFIG_LOAD] = "EnvConfig of '<1>' was successful",
+  [NAMESAKE] = "Same name as another command",
+  [ERROR_LOAD_FILE] = "Error loading command '<1>': <2>",
+  [HANDLER_MISSING_DATA] = "Missing data to be able to execute the command.",
+
+  # Only Thread User Qtv
+  [PERSONAL_ONLY] = "[PERSONAL ONLY] Please contact admin to be able to chat with bot directly.",
+  [ADMIN_ONLY] = "[ADMIN ONLY]» The bot is in a mode that only administrators can use.",
+  [BOX_ONLY] = "[BOX ONLY]» The bot is only in box <1> <2> mode that can be used.",
+  [QTV_BOX_ONLY] = "[QTV BOX ONLY]» Enabled mode only chat box admin can use bot.",
+  [QTV_ALL_BOX_ONLY] = "[QTV ALL BOX ONLY]» Enabled the mode that only admins of the entire chat group can use bots.",
+  [LIST_BOX_ONLY_01] = "❎Bot is in mode that only approved boxes can use\n\n1. Use !box id to get your Box ID\n2. Comment your TID box on the post to get active bot\n- Link: https://www.facebook.com/support.manhict\n3. Use !callad ID box to activate your box\n4. Use !duyetbox to request your active box to the Admin Bot",
+  [LIST_BOX_ONLY_02] = "Currently, only approved groups can use bots. Please contact admin to be able to use", 
+
+  # Banned database
+  [BANNED_THREAD] = "Your group is currently banned for the reason: <1> - Time: <2>",
+  [BANNED_USER] = "You are currently banned for the following reason: <1> - Time: <2> - Use: <3> callad to chat directly with bot admins",
+
+}

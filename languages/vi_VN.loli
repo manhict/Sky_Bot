@@ -1,0 +1,83 @@
+# Nếu bạn muốn xuống dòng, hãy dùng\n. VD: Sky\nSkyBot.
+# Sau khi thay đổi, bạn phải khởi động lại bot để có hiệu lực.
+# Đặt kí tự # ở đầu mỗi câu nếu bạn không muốn code chạy những dòng đó.
+
+config: {
+  [NAME] = "vi_VN",
+  [TYPE] = "language system",
+  [AUTHOR] = "DuyVuong - ManhG",
+  [VERSION] = "1.0.0"
+},
+index: {
+
+  # System
+  [CREATE_FBSTATE] = "Ghi mới Fbstate.json thành công",
+  [HOST_UPTIME] = "Khởi tạo server uptime, port: <1>",
+  [FBSTATE_NO] = "Không tìm thấy file <1>.json !!!",
+  [FBSTATE_ERR] = "Sai định dạng file Fbstate.",
+  [FBSTATE_YES] = "Tìm thấy file <1>.json \n-> Tiến hành đăng nhập...",
+  [LOGIN_EMAIL] = "Tiến hành đăng nhập bằng username, password...",
+  [LOGIN_ERROR] = "Thất bại, vui lòng kiểm tra lại tài khoản, mật khẩu, 2FA.\n",
+  [LOGIN_EMAIL_ERR] = "Thất bại, vui lòng kiểm tra lại tài khoản, mật khẩu.\n",
+  [WRITE_FBSTATE] = "Ghi mới Fbstate.json thành công\n-> Tiến hành khởi động lại.",
+  [LOGIN_YES] = "Đăng nhập thành công.\n",
+  [NEWFBSTATE_YES] = "Đã làm mới <1>.json.",
+  [INSTALL_PACKAGE] = "Đang cài đặt các gói cần thiết cho module:\n <1>",
+  [INSTALL_PACKAGE_SUCCESS] = "Đã cài đặt thành công gói <1>",
+  [INSTALL_PACKAGE_FAILED] = "Cài đặt gói <1> thất bại với lỗi: <2>",
+
+  # Auto Uptime
+  [CHECK_HOST] = "Bạn đang chạy bot ở link: <1>",
+  [HACKER_PLAN] = "Bạn đang dùng Replit Hacker, hãy nhớ bật 'Always On' để BOT luôn chạy nhé.",
+  [HOST_FREE] = "Bạn đang dùng Replit thường, hệ thống đã tự động bật chế độ luôn giữ kết nối với server.",
+  [HOST_FALSE] = "Bạn đang không sử dụng replit/railwayapp để chạy bot. Vui lòng tắt uptimeRobot trong configMain\n",
+
+  # Settings database
+  [DATABASE_READ_YES] = "Đã đọc dữ liệu của <1> nhóm và <2> người dùng.",
+  [INFO_DONE] = "Bắt đầu nhận tin.",
+  [HANDLER_ERROR] = "Đã xảy ra lỗi: <1>",
+  [DATABASE_THREAD_NEW] = "Nhóm Mới: <1> | <2>",
+  [DATABASE_USER_NEW] = "Người Dùng Mới: <1> | <2>",
+  [CHOOSE_DATABASE] = "Bạn chọn nơi lưu trữ CSDL là mongosee.",
+  [CHOOSE_DATABASE_LOCAL] = "Bạn chọn nơi lưu trữ CSDL là local.",
+  [CONNECTION_DATABASE] = "Đang kết nối CSDL mongodb",
+  [CONNECTION_DATABASE_SUCCESS] = "Kết nối cơ sở dữ liệu Mongodb thành công.",
+  [CONNECTION_DATABASE_FAILED] = "Kết nối cơ sở dữ liệu Mongodb thất bại với lỗi: <1>",
+
+  # Settings Hander Commands
+  [COMMAND_NO_SCRIPTS] = "Sai lệnh. Dùng <1><2> để xem các lệnh đang hoạt động.",
+  [COMMAND_NO_FIND] = "Không tìm thấy lệnh: '<1>'",
+  [COMMAND_NO_PERMISSIONS] = "Bạn không có quyền để sử dụng lệnh '<1>', lệnh này yêu cầu '<2>' mới có thể khởi động.",
+
+  # Role
+  [ROLE_0] = "Người dùng thường",
+  [ROLE_1] = "Quản trị viên",
+  [ROLE_2] = "Người điều hành bot",
+  [ROLE_3] = "Người hỗ trợ, điều hành bot",
+  [ROLE_4] = "Hỗ trợ đặc biệt",
+
+  # Modules Commands 
+  [HELP] = "===[ <1> ]===\n\n🔢 Version: <2>\n✊ Role: <3>\n📗 Author: <4>\n\n📜 Miêu tả: <5>\n ⏳ Thời gian chờ: <6>s\n📄 Cách sử dụng: <7>\n\n🇻🇳 Facebook: https://fb.com/support.manhict",
+  [THROWERROR] = "Sai lệnh, sử dụng: <1>help <2> để xem cách sử dụng.",
+
+  # Load commands - events
+  [COMMAND_EVENT_LOAD_FILE] = "Tải thành công <1> lệnh <2>.",
+  [ENVCONFIG_LOAD] = "Tải envConfig của '<1>' thành công",
+  [NAMESAKE] = "Trùng tên với lệnh khác\n",
+  [ERROR_LOAD_FILE] = "Đã xảy ra lỗi khi tải lệnh '<1>': <2>\n",
+  [HANDLER_MISSING_DATA] = "Thiếu dữ liệu để có thể thực hiện lệnh.",
+
+  # Only Thread User Qtv
+  [PERSONAL_ONLY] = "[PERSONAL ONLY] Vui lòng liên hệ admin để có thể trò chuyện trực tiếp với bot.",
+  [ADMIN_ONLY] = "[ADMIN ONLY]» Bot đang ở chế độ chỉ quản trị viên mới có thể sử dụng.",
+  [BOX_ONLY] = "[BOX ONLY]» Bot đang ở chế độ chỉ box <1> <2> mới có thể sử dụng.",
+  [QTV_BOX_ONLY] = "[QTV BOX ONLY]» Đang bật chế độ chỉ quản trị viên box chat mới có thể sử dụng bot.",
+  [QTV_ALL_BOX_ONLY] = "[QTV ALL BOX ONLY]» Đang bật chế độ chỉ quản trị viên toàn bộ nhóm chat mới có thể sử dụng bot.",
+  [LIST_BOX_ONLY_01] = "❎Bot đang ở chế độ chỉ các box được duyệt mới có thể sử dụng\n\n1. Sử dụng !box id để lấy TID Box của bạn\n2. Comment TID box của bạn vào bài viết để được active bot\n-> Link: https://www.facebook.com/support.manhict\n3. Dùng !callad (TID) để kích hoạt box của bạn\n4. Dùng !duyetbox để yêu cầu kích hoạt box của bạn tới các Admin Bot",
+  [LIST_BOX_ONLY_02] = "Hiện tại nhóm nào được duyệt mới có thể sử dụng bot, Vui lòng liên hệ admin để có thể sử dụng",
+
+  # Banned database
+  [BANNED_THREAD] = "Nhóm bạn hiện bị ban với lý do: <1> - Time: <2>",
+  [BANNED_USER] = "Hiện tại bạn bị ban với lý do: <1> - Time: <2> - Sử dụng: <3>callad để trò truyện trực tiếp với các admin bot",
+
+}

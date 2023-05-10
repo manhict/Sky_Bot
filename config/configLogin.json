@@ -1,0 +1,15 @@
+{
+    "##NOTES": [
+        "1. Để tắt đăng nhập bằng tài khoản facebook thì đổi HEADLESS thành false",
+        "2. Với tài khoản không bật 2FA thì đổi OPTKEY status thành false",
+        "1. To disable login with facebook account, change HEADLESS to false",
+        "2. For accounts that do not have 2FA enabled, change the OPTKEY status to false"
+    ],
+    "EMAIL": "example@yahoo.com",
+    "PASSWORD": "password",
+    "OPTKEY": {
+        "status": true,
+        "code": "XMCC 3K72 ZMK7 37P7 O36L JM6O SWSZ BX4J"
+    },
+    "HEADLESS": true
+}

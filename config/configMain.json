@@ -1,0 +1,49 @@
+{
+    "NAME": "𝐒𝐤𝐲𝐁𝐨𝐭 ✌️",
+    "PREFIX": "!",
+    "ADMIN": [
+        "100038379006171",
+        "1029099762"
+    ],
+    "EXCEPTION": [],
+    "LANGUAGE_SYS": "vi_VN",
+    "DATABASE": {
+        "type": "mongodb",
+        "uriMongodb": "mongodb+srv:<username>: <password> @<cluster-url> /<database>?retryWrites=true&w=majority",
+        "notes": "Choose *local* or *mongodb*"
+    },
+    "AUTOUNSEND": {
+        "status": true,
+        "time": 5000
+    },
+    "RESTARTMQTT": {
+        "status": true,
+        "time": 3200000
+    },
+    "AUTORESTART": {
+        "status": true,
+        "time": 6400000
+    },
+    "UPTIMEROBOT": false,
+    "personalOnly": false,
+    "boxOnly": null,
+    "allQTVOnly": false,
+    "adminOnly": false,
+    "LOGBOT": false,
+    "DEVMODE": "high",
+    "//#DEVMODE": "choose ['normal', 'high', 'super', 'dev']",
+    "WEBAPI": "https://nguyenmanh.name.vn/api/",
+    "APIKEY": "YourApiKey",
+    "accessToken": "463372798834978|csqGyA8VWtIhabZZt-yhEBStl9Y",
+    "DATA_APPSTATE": "fbstate",
+    "FCA": {
+        "forceLogin": true,
+        "listenEvents": true,
+        "logLevel": "error",
+        "autoReconnect": true,
+        "updatePresence": true,
+        "selfListen": true,
+        "online": false,
+        "autoMarkRead": true
+    }
+}
