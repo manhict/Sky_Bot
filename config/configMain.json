@@ -2,10 +2,11 @@
     "NAME": "𝐒𝐤𝐲𝐁𝐨𝐭 ✌️",
     "PREFIX": "!",
     "ADMIN": [
-        "100038379006171",
-        "1029099762"
+        "IDADMIN"
     ],
-    "EXCEPTION": [],
+    "EXCEPTION": [
+        "IDEXCEPTION"
+    ],
     "LANGUAGE_SYS": "vi_VN",
     "DATABASE": {
         "type": "mongodb",
