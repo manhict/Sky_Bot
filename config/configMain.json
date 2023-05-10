@@ -9,7 +9,7 @@
     ],
     "LANGUAGE_SYS": "vi_VN",
     "DATABASE": {
-        "type": "mongodb",
+        "type": "local",
         "uriMongodb": "mongodb+srv:<username>: <password> @<cluster-url> /<database>?retryWrites=true&w=majority",
         "notes": "Choose *local* or *mongodb*"
     },
