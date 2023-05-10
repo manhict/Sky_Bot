@@ -59,7 +59,7 @@ Sau đây là các bước cơ bản để có thể cài đặt và vận hành
 - Cần hiểu biết sơ lược qua về node, javascript.
 - Một tài khoản Facebook dùng để làm bot(Khuyến khích nên sử dụng acc đã bỏ hoặc không còn sử dụng để tránh mất acc hay acc bị khoá).
 - Đối với:
-    - Windows: Cần cài đặt windows-build-tools.
+    - Windows: Cần cài đặt nodejs.
     - Linux: Cần cài đặt python3 hoặc python2.
     - Android Sử dụng termux để vận hành bot.
 
