@@ -1,7 +1,7 @@
 <br />
 <p align="center">
     <a href="https://github.com/manhict/Sky_Bot">
-        <img src="https://github.com/manhict/Sky_Bot/caches/skyBotPreview.png" alt="Logo">
+        <img src="https://github.com/manhict/Sky_Bot/blob/main/caches/logo.png" alt="Logo">
     </a>
 
 <h3 align="center">SkyBot</h3>

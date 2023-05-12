@@ -17,6 +17,7 @@ index: {
   [FBSTATE_ERR] = "Sai định dạng file Fbstate.",
   [FBSTATE_YES] = "Tìm thấy file <1>.json \n-> Tiến hành đăng nhập...",
   [LOGIN_EMAIL] = "Tiến hành đăng nhập bằng username, password...",
+  [LOGIN_OTPKEY] = "Tiến hành đăng nhập bằng OTP: <1>",
   [LOGIN_ERROR] = "Thất bại, vui lòng kiểm tra lại tài khoản, mật khẩu, 2FA.\n",
   [LOGIN_EMAIL_ERR] = "Thất bại, vui lòng kiểm tra lại tài khoản, mật khẩu.\n",
   [WRITE_FBSTATE] = "Ghi mới Fbstate.json thành công\n-> Tiến hành khởi động lại.",

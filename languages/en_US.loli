@@ -17,6 +17,7 @@ index: {
   [FBSTATE_ERR] = "Wrong file format Fbstate.",
   [FBSTATE_YES] = "File <1>.json found\n-> Proceed to login.",
   [LOGIN_EMAIL] = "Login with username, password...",
+  [LOGIN_OTPKEY] = "Login with OTP key: <1>",
   [LOGIN_ERROR] = "Failed, Please check username, password and 2FA code.",
   [LOGIN_EMAIL_ERR] = "Failed, Please check username, password.",
   [WRITE_FBSTATE] = "Write Fbstate successful\n-> Proceed to reboot",

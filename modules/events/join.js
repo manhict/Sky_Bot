@@ -9,7 +9,7 @@ export const config = {
 };
 export const languages = {
     "vi_VN": {
-        "botWecome": "🔱 Kết nối thành công với 𝗠𝗮𝗻𝗵𝗚❤️𝗕𝗼𝘁 ✌️!\n\n🍓Sử dụng '%1help all' để xem tất cả các lệnh có trên bot này\n♻️Sử dụng: %2language vietnames/english để chọn ngôn ngữ cho nhóm trò chuyện của bạn\n\n🔷🎭Admin nhà điều hành bot: \nFb.com/support.manhict",
+        "botWecome": "🔱 Kết nối thành công với Sky𝗕𝗼𝘁 ✌️!\n\n🍓Sử dụng '%1help all' để xem tất cả các lệnh có trên bot này\n♻️Sử dụng: %2language vietnames/english để chọn ngôn ngữ cho nhóm trò chuyện của bạn\n\n🔷🎭Admin nhà điều hành bot: \nFb.com/support.manhict",
         "wecDefault": "👋Welcome {userName}.\nChào mừng {multiple} đã đến với: {boxName}\nLà thành viên thứ {member} của nhóm.\nChúc {multiple} có một buổi {session} vui vẻ =)",
         "friend": "bạn",
         "friends": "các bạn",
@@ -19,7 +19,7 @@ export const languages = {
         "night": "tối"
     },
     "en_US": {
-        "botWecome": "🔱🪂Successfully connected with 𝗠𝗮𝗻𝗵𝗚❤️𝗕𝗼𝘁 ✌️!\n\n🍓Use '%1help all' to see all commands present on this bot\n♻️Use: %2language vietnames/english to select the language for your chat group\n\n🔷🎭Admin bot operator:\nFb.com/support.manhict",
+        "botWecome": "🔱🪂Successfully connected with Sky𝗕𝗼𝘁 ✌️!\n\n🍓Use '%1help all' to see all commands present on this bot\n♻️Use: %2language vietnames/english to select the language for your chat group\n\n🔷🎭Admin bot operator:\nFb.com/support.manhict",
         "wecDefault": "👋Welcome {userName}.\nWelcome {multiple} to: {boxName}\nBe the {member} member of the group.\nWish {multiple} a happy {session} =)",
         "friend": "you",
         "friends": "friends",

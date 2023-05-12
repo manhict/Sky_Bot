@@ -4,7 +4,6 @@
 */
 
 import fetch from 'node-fetch';
-import cheerio from 'cheerio';
 
 export const config = {
     name: 'chatgpt',

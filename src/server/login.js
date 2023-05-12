@@ -35,7 +35,7 @@ if (configLogin['HEADLESS'] == true) {
 			switch (err.error) {
 				case "login-approval":
 					let code = (totp(otpkey));
-					logger.log(code, "OTPKEY");
+					logger.log(getLang('LOGIN_OTPKEY', code), 'OTPKEY');
 					if (otpkey) err.continue(code);
 					else {
 						console.log("Nhập mã xác minh 2 lớp:");

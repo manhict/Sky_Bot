@@ -2,7 +2,7 @@
 export const config = {
     name: 'getuser',
     version: '1.0.0',
-    role: 0,
+    role: 2,
     author: ['manhG'],
     viDesc: 'get Info User.',
     enDesc: "get Info User.",

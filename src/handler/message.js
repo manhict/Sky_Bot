@@ -1,8 +1,15 @@
 'use strict';
-export default function({ event, api }) {
+export default function ({ event, api }) {
+    process.on('uncaughtException', (err) => {
+        // console.log(err.message || err);
+    });
     function send(text, callback) {
-        if (callback && typeof callback == "function") return api.sendMessage(text, callback);
-        else return api.sendMessage(text, event.threadID);
+        try {
+            if (callback && typeof callback == "function") return api.sendMessage(text, callback);
+            else return api.sendMessage(text, event.threadID);
+        } catch (error) {
+            console.error(error);
+        }
     }
 
     function user(text, id, callback) {
@@ -21,7 +28,7 @@ export default function({ event, api }) {
     }
 
     function reaction(emoji, messageID) {
-        return api.setMessageReaction(emoji, function() {}, true);
+        return api.setMessageReaction(emoji, function () { }, true);
     }
 
     function unsendReaction(messageID, callback) {
