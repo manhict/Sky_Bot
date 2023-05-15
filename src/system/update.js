@@ -15,6 +15,8 @@ async function downloadAndUnzip(fileUrl, fileName, extractDir, openFileNames) {
     // Khởi tạo thanh tiến trình
     const progressBar = new cliProgress.SingleBar({}, cliProgress.Presets.shades_classic);
 
+    console.log(fileUrl)
+
     try {
         // Tải xuống file bằng axios
         const response = await axios({
@@ -87,7 +89,30 @@ const checkUpdate = async (VERSION) => {
                 'content-type': 'application/json'
             }
         }).then(r => r.json())
-        let SKYBOT = response['SkyBot'];
+
+        let k ={
+            "SkyBot": {
+            "status": true,
+            "versionNew": "1.0.1",
+            "versionOld": "1.0.0",
+            "description": "",
+            "url": "https://www.github.com",
+            "icon": "https://www.github.com/favicon.ico",
+            "update": {
+            "status": true,
+            "linkUpdate": "https://github.com/manhict/Sky_Bot/releases/download/untagged-333db49ea85b73dceab5/Sky_Bot_v1.0.1.zip",
+            "fileZip": "SkyBot.zip",
+            "openFileNames": {
+            "windows": "SkyBot.exe",
+            "mac": "SkyBot-macos",
+            "linux": "SkyBot-linux"
+            },
+            "content": "update..."
+            }
+            }
+            }
+
+        let SKYBOT = k['SkyBot'];
         if (SKYBOT.status == true) {
             if (SKYBOT.versionNew > VERSION) {
                 console.log(chalk.blue(`- Phiên bản mới ${chalk.white(`v${SKYBOT.versionNew}`)} đã được phát hành, vui lòng cập nhật phiên bản mới nhất!`));

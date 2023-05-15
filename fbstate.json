@@ -1,1 +1,38 @@
-[]
+[
+  {
+    "key": "fr",
+    "value": "0G1AB4FcgYJ8mewKO.AWX2HkGjKIPsUcrDAfAvgOqKp7g.BkXl1u.Xw.AAA.0.0.BkXl17.AWXeWNYPRyg",
+    "domain": "facebook.com",
+    "path": "/",
+    "hostOnly": false,
+    "creation": "2023-05-12T17:27:39.792Z",
+    "lastAccessed": "2023-05-12T19:14:22.888Z"
+  },
+  {
+    "key": "sb",
+    "value": "bl1eZN_gUjyLukv2BOKgLT-t",
+    "domain": "facebook.com",
+    "path": "/",
+    "hostOnly": false,
+    "creation": "2023-05-12T17:27:39.813Z",
+    "lastAccessed": "2023-05-12T19:14:22.888Z"
+  },
+  {
+    "key": "datr",
+    "value": "bl1eZBao2JyLx4D7EmJ5D6Uk",
+    "domain": "facebook.com",
+    "path": "/",
+    "hostOnly": false,
+    "creation": "2023-05-12T17:27:39.816Z",
+    "lastAccessed": "2023-05-12T19:14:22.888Z"
+  },
+  {
+    "key": "locale",
+    "value": "vi_VN",
+    "domain": "facebook.com",
+    "path": "/",
+    "hostOnly": false,
+    "creation": "2023-05-12T17:27:39.818Z",
+    "lastAccessed": "2023-05-12T19:14:22.888Z"
+  }
+]

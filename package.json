@@ -1,6 +1,6 @@
 {
   "name": "skybot",
-  "version": "1.0.1",
+  "version": "1.0.0",
   "main": "boot.js",
   "scripts": {
     "start": "node boot.js",
