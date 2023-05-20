@@ -2,7 +2,13 @@ import fetch from "node-fetch";
 import axios from "axios";
 import cliProgress from "cli-progress";
 import chalk from "chalk";
-import * as logger from "../function/logger.js";
+import unzipper from "unzipper";
+import os from "os";
+import { exec } from "child_process";
+import fs from "fs";
+import { Start } from "../system/spawn.js"
+import { createRequire } from "module"
+const require = createRequire(import.meta.url)
 
 /**
  * Tải xuống và giải nén file từ URL được cung cấp.
@@ -14,8 +20,6 @@ import * as logger from "../function/logger.js";
 async function downloadAndUnzip(fileUrl, fileName, extractDir, openFileNames) {
     // Khởi tạo thanh tiến trình
     const progressBar = new cliProgress.SingleBar({}, cliProgress.Presets.shades_classic);
-
-    console.log(fileUrl)
 
     try {
         // Tải xuống file bằng axios
@@ -46,12 +50,15 @@ async function downloadAndUnzip(fileUrl, fileName, extractDir, openFileNames) {
                             switch (os.platform()) {
                                 case 'win32':
                                     exec(`start ${extractDir}`);
+                                    Start('Loading...');
                                     break;
                                 case 'darwin':
                                     exec(`open -a Terminal.app ${extractDir}`);
+                                    Start('Loading...');
                                     break;
                                 case 'linux':
                                     exec(`gnome-terminal --working-directory=${extractDir}`);
+                                    Start('Loading...');
                                     break;
                                 default:
                                     console.error(chalk.red(`Không hỗ trợ hệ điều hành: ${os.platform()}`));
@@ -89,30 +96,7 @@ const checkUpdate = async (VERSION) => {
                 'content-type': 'application/json'
             }
         }).then(r => r.json())
-
-        let k ={
-            "SkyBot": {
-            "status": true,
-            "versionNew": "1.0.1",
-            "versionOld": "1.0.0",
-            "description": "",
-            "url": "https://www.github.com",
-            "icon": "https://www.github.com/favicon.ico",
-            "update": {
-            "status": true,
-            "linkUpdate": "https://github.com/manhict/Sky_Bot/releases/download/untagged-333db49ea85b73dceab5/Sky_Bot_v1.0.1.zip",
-            "fileZip": "SkyBot.zip",
-            "openFileNames": {
-            "windows": "SkyBot.exe",
-            "mac": "SkyBot-macos",
-            "linux": "SkyBot-linux"
-            },
-            "content": "update..."
-            }
-            }
-            }
-
-        let SKYBOT = k['SkyBot'];
+        let SKYBOT = response['SkyBot'];
         if (SKYBOT.status == true) {
             if (SKYBOT.versionNew > VERSION) {
                 console.log(chalk.blue(`- Phiên bản mới ${chalk.white(`v${SKYBOT.versionNew}`)} đã được phát hành, vui lòng cập nhật phiên bản mới nhất!`));
@@ -133,10 +117,13 @@ const checkUpdate = async (VERSION) => {
             if (SKYBOT.versionNew >= VERSION) {
                 var pb = 'là phiên bản mới nhất!';
             } else var pb = 'là phiên bản cũ, vui lòng cập nhật phiên bản mới nhất!';
+            let _content = SKYBOT.update.content;
+            let rdContent = Math.floor(Math.random() * _content.length);
 
             console.log(chalk.cyanBright(`- Phiên bản hiện tại ${chalk.white(`v${SKYBOT.versionNew}`)} ${pb}`));
-            console.log(chalk.cyanBright(`- Thông báo: ${SKYBOT.update.content}`));
+            console.log(chalk.cyanBright(`- Thông báo: ${rdContent}`));
             console.log('\n')
+            require('../server/login.js');
         }
         // return true
     } catch (err) {

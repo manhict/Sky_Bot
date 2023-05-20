@@ -40,12 +40,12 @@ export async function onMessage({ event, api, Config, message, Threads, Users, g
     if (!global.data.allThreadID.find(e => e == threadID)) return;
     const dataThread = await Threads.getData(threadID);
     const threadData = dataThread.data || {};
-    if (threadData.sendWelcomeMessage != true) return;
+    // if (threadData.sendWelcomeMessage != true) return;
     // Nếu là bot;
     
     if (event.logMessageData.addedParticipants.some(item => item.userFbId == api.getCurrentUserID())) {
         await Threads.setStatus(event.threadID, true);
-        api.changeNickname(`〘 ${getPrefix} 〙➤ 𝗠𝗮𝗻𝗵𝗚❤️𝗕𝗼𝘁 ✌️`, threadID, api.getCurrentUserID());
+        api.changeNickname(`〘 ${getPrefix} 〙➤ Sky❤️𝗕𝗼𝘁 ✌️`, threadID, api.getCurrentUserID());
         return message.send(getText("botWecome", getPrefix, getPrefix));
     }
     // Nếu là thành viên mới:

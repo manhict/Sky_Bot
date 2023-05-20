@@ -35,7 +35,7 @@ export async function onMessage({ event, api, Config, message, Threads, Users, g
     if (event.logMessageData.leftParticipantFbId == api.getCurrentUserID()) return;
     if (!global.data.allThreadID.find(e => e == threadID)) return;
     const threadData = (await Threads.getData(threadID)).data || {};
-    if (threadData.sendLeaveMessage != true) return;
+    // if (threadData.sendLeaveMessage != true) return;
 
     let leftParticipantFbId = event.logMessageData.leftParticipantFbId;
     const messageLeaveDefault = getText("messageLeave")
