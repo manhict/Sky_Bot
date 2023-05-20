@@ -29,32 +29,36 @@ let email = configLogin.EMAIL;
 let password = configLogin.PASSWORD;
 let otpkey = configLogin.OPTKEY.code.replace(/\s+/g, '').toUpperCase();
 
-if (configLogin['HEADLESS'] == true) {
-	login({ email, password }, option, (err, api) => {
-		if (err) {
-			switch (err.error) {
-				case "login-approval":
-					let code = (totp(otpkey));
-					logger.log(getLang('LOGIN_OTPKEY', code), 'OTPKEY');
-					if (otpkey) err.continue(code);
-					else {
-						console.log("Nhập mã xác minh 2 lớp:");
-						rl.on("line", line => {
-							err.continue(line);
-							rl.close();
-						});
-					}
-					break;
-				default:
-					logger.error(getLang('LOGIN_ERROR'), 'Login');
-					Start("Restarting...");
+function Login(){
+	if (configLogin['HEADLESS'] == true) {
+		login({ email, password }, option, (err, api) => {
+			if (err) {
+				switch (err.error) {
+					case "login-approval":
+						let code = (totp(otpkey));
+						logger.log(getLang('LOGIN_OTPKEY', code), 'OTPKEY');
+						if (otpkey) err.continue(code);
+						else {
+							console.log("Nhập mã xác minh 2 lớp:");
+							rl.on("line", line => {
+								err.continue(line);
+								rl.close();
+							});
+						}
+						break;
+					default:
+						logger.error(getLang('LOGIN_ERROR'), 'Login');
+						Start("Restarting...");
+				}
+				return;
 			}
-			return;
-		}
-		logger.log(getLang('CREATE_FBSTATE'), 'write fbstate');
-		const json = JSON.stringify(api.getAppState(), null, 2);
-		fs.writeFileSync(configMain['DATA_APPSTATE'] + '.json', json);
-		Start("Restarting...");
-	});
+			logger.log(getLang('CREATE_FBSTATE'), 'write fbstate');
+			const json = JSON.stringify(api.getAppState(), null, 2);
+			fs.writeFileSync(configMain['DATA_APPSTATE'] + '.json', json);
+			Start("Restarting...");
+		});
+	}
+	else Start("Restarting...");
 }
-else Start("Restarting...");
+
+export default Login;

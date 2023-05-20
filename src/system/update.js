@@ -7,8 +7,7 @@ import os from "os";
 import { exec } from "child_process";
 import fs from "fs";
 import { Start } from "../system/spawn.js"
-import { createRequire } from "module"
-const require = createRequire(import.meta.url)
+import Login from "../server/login.js";
 
 /**
  * Tải xuống và giải nén file từ URL được cung cấp.
@@ -118,12 +117,12 @@ const checkUpdate = async (VERSION) => {
                 var pb = 'là phiên bản mới nhất!';
             } else var pb = 'là phiên bản cũ, vui lòng cập nhật phiên bản mới nhất!';
             let _content = SKYBOT.update.content;
-            let rdContent = Math.floor(Math.random() * _content.length);
+            let rdContent = _content[Math.floor(Math.random() * _content.length)];
 
             console.log(chalk.cyanBright(`- Phiên bản hiện tại ${chalk.white(`v${SKYBOT.versionNew}`)} ${pb}`));
             console.log(chalk.cyanBright(`- Thông báo: ${rdContent}`));
             console.log('\n')
-            require('../server/login.js');
+            return Login();
         }
         // return true
     } catch (err) {
